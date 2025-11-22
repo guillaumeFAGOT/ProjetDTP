@@ -26,5 +26,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Install pandas
+        run: pip install pandas
+
       - name: Run Python script
         run: python scripts/read_csv.py
