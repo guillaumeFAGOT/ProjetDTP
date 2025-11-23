@@ -4,13 +4,13 @@ name: CSV Pipeline
 
 on:
 
-  push:
+push:
 
     branches:
 
       - main
 
-  workflow_dispatch:
+workflow_dispatch:
     inputs:
       env:
         description: 'Sélectionner l’environnement'
