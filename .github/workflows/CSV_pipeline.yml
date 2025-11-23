@@ -1,14 +1,14 @@
 name: CSV Pipeline
-on: 
-push:
-  branches:
-    - main
-workflow_dispatch:
-  inputs:
-    env:
-      description: Sélectionner l’environnement
-      required: true
-      default: dev
+on:
+   push:
+     branches:
+       - main
+   workflow_dispatch:
+      inputs:
+        env:
+          description: Sélectionner l’environnement
+          required: true
+          default: dev
 jobs:
   csv_pipeline:
     runs-on: ubuntu-latest
